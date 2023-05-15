@@ -8,6 +8,8 @@ public class DistinctNumber {
   list.add(49);
   list.add(67);
   list.add(19);
+		list.add(75784);
+		list.add(19);
   list.add(36);
   list.add(345);
   list.add(67);
