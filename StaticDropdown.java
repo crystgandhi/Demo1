@@ -1,4 +1,4 @@
-package myexercise;
+
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 public class StaticDropdown {
@@ -14,8 +15,9 @@ public class StaticDropdown {
 	 
 
 	public static void main(String[] args) throws InterruptedException {
-	
-		WebDriver	driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe"); 
+		ChromeOptions options=new ChromeOptions();
+		WebDriver driver = (WebDriver) new ChromeDriver();
 		Dimension sizeOfWindow = driver.manage().window().getSize();
 		System.out.println(sizeOfWindow);
 		driver.manage().window().maximize();
