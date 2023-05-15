@@ -18,7 +18,7 @@ public class HashmapExample {
 		hm.remove(73);
 		
 		System.out.println(hm); 
-                System.out.println();
+        System.out.println();
 		// print in different ways
 		System.out.println(Arrays.asList(hm));
 		System.out.println(" ");
