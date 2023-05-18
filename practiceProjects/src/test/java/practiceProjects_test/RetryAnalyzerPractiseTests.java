@@ -14,7 +14,7 @@ public class RetryAnalyzerPractiseTests {
 		driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/v4/");
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("mngr503728");
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("vugymYh");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("vugymYh");  //get updated username and passowrd from the website
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		String heading=driver.findElement(By.cssSelector("h2.barone")).getText();
 		Assert.assertEquals(heading, "Guru99 Bank");
